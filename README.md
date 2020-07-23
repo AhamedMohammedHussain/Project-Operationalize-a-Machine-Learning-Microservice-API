@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+![image](https://video.udacity-data.com/topher/2019/May/5cda259e_screen-shot-2019-05-13-at-7.19.00-pm/screen-shot-2019-05-13-at-7.19.00-pm.png)
 
 ## Project Overview
 
@@ -40,3 +40,16 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+
+
+
+
+
+
+
+
+The common errors found in the way are :
+Dont use string format in app.py instead use with %s
+install pylint by pip3 only
+for minikube , use one with 2 cpus and 8 gb ram (8gb not necessary)

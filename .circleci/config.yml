@@ -27,7 +27,7 @@ jobs:
             wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
                 chmod +x /bin/hadolint
             #install pylint using pip3
-            sudo apt-get install python3-pip && pip-3.3 install pylint
+            apt-get install python3-pip && pip-3.3 install pylint
       - save_cache:
           paths:
             - ./venv

@@ -1,0 +1,34 @@
+
+//main terminal 
+
+(.devops) ubuntu@ip-10-0-4-114:~/DevOps_Microservices/project-ml-microservice-kubernetes$ ./run_kubernetes.sh 
+pod/ahameddocker created
+NAME           READY   STATUS              RESTARTS   AGE
+ahameddocker   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+
+
+
+//had to change the port ..  mistakingly typed 8001 instead of 8000. hence correcting , 
+
+(.devops) ubuntu@ip-10-0-4-114:~/DevOps_Microservices/project-ml-microservice-kubernetes$ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "ahameddocker" already exists
+NAME           READY   STATUS    RESTARTS   AGE
+ahameddocker   1/1     Running   0          75s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+
+
+// another terminal
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
+
+
